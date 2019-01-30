@@ -119,13 +119,13 @@ carro.adicionarPessoas = function(quantas) {
   ) {
     carro.quantidadePessoas += quantas;
     return "Ja temos " + carro.quantidadePessoas + " no carro!";
-  } else if (carro.quantidadePessoas === 5) {
+  } else if (carro.quantidadePessoas === carro.assentos) {
     return "carro lotado";
   } else if (
     carro.quantidadePessoas < 5 &&
     carro.quantidadePessoas + quantas > 5
   ) {
-    var quantasCabemAinda = 5 - carro.quantidadePessoas;
+    var quantasCabemAinda = carro.assentos - carro.quantidadePessoas;
     var pessoas = "pessoas";
 
     if (quantasCabemAinda === 1) {
