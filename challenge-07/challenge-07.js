@@ -9,22 +9,21 @@ A função deverá retornar o array atualizado.
 */
 function addItem(x) {
   variados.push(x);
+  return variados;
 }
 
 /*
 Adicione um novo array ao array criado no início do desafio, com ao menos 3
 itens de tipos diferentes, mostrando o resultado no console.
 */
-var newVariados = [3, true, "gol"];
-addItem(newVariados);
-console.log(variados);
+console.log(addItem([3, true, "gol"]));
 
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
 "O segundo elemento do segundo array é [ELEMENTO]."
 */
-connsole.log("o segundo elemento do segundo array é " + newVariados[1] + ".");
+console.log("o segundo elemento do segundo array é " + variados[5][1] + ".");
 
 /*
 Mostre no console quantos itens tem o primeiro array criado, com a frase:
@@ -36,7 +35,7 @@ console.log("O primeiro array tem " + variados.length + " itens.");
 Agora mostre no console quantos itens tem o segundo array criado, com a frase:
 "O segundo array tem [QUANTIDADE DE ITENS] itens."
 */
-console.log("O segundo array tem " + newVariados.length + " itens.");
+console.log("O segundo array tem " + variados[5].length + " itens.");
 
 /*
 Utilizando a estrutura de repetição `while`, mostre no console todos os números
