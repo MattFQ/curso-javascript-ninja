@@ -22,7 +22,7 @@ para o nome, idade, peso e data de nascimento dessa pessoa.
     name: "jose",
     age: 23,
     weight: 98,
-    birthday: 1995
+    birthday: "15/06"
   };
 
   /*
@@ -48,14 +48,13 @@ Se verdadeiro, retornar `true`. Senão, retornar false.
 Após a função, mostrar a mensagem no console:
 'The person has more than 25 years old? [TRUE/FALSE]'
 */
-  var idadeAtual = 2018 - person.birthday;
   function moreThan(idadeParametro) {
-    if (idadeAtual > idadeParametro) {
+    if (person.age > idadeParametro) {
       return true;
     }
     return false;
   }
-  var vinteCincoMais = idadeAtual > 25 ? "TRUE" : "FALSE";
+  var vinteCincoMais = person.age > 25 ? "TRUE" : "FALSE";
   console.log("The person has more than 25 years old? " + vinteCincoMais);
 
   /*
