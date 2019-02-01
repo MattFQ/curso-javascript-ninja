@@ -64,9 +64,9 @@ array chamado `numbers`. Se o contador for maior que 10, saia do loop.
 Mostre no console os números no array.
 */
   var numbers = [];
-  for (var i = 0; i<20~i++) {
+  for (var i = 0; i < 20; i++) {
     numbers.push(i);
-    if (i>10) {
+    if (i > 10) {
       break;
     }
   }
