@@ -64,10 +64,11 @@ array chamado `numbers`. Se o contador for maior que 10, saia do loop.
 Mostre no console os números no array.
 */
   var numbers = [];
-  var i = 0;
-  while (i <= 10) {
+  for (var i = 0; i<20~i++) {
     numbers.push(i);
-    i++;
+    if (i>10) {
+      break;
+    }
   }
   console.log("De 0 a 10:" + numbers);
 
