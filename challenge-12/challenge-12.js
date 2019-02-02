@@ -93,7 +93,7 @@
     */
   // ?
   var myName = ["M", "A", "T", "E", "U", "S"];
-  console.log("\nMeu nome é:" + myName.join());
+  console.log("\nMeu nome é:" + myName.join(""));
 
   /*
     Juntando todos os itens do array, mostre no console seu nome.
